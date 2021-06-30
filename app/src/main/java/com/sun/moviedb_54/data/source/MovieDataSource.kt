@@ -30,7 +30,7 @@ interface MovieDataSource {
     }
 
     interface Local {
-        suspend fun getMovieFavorite(): MutableList<MovieFavorite>
+        suspend fun getMovieFavorite(): MutableList<MovieFavorite>?
 
         suspend fun checkFavorite(id: Int): MovieFavorite?
 
