@@ -10,7 +10,7 @@ import com.sun.moviedb_54.data.model.MovieFavorite
 interface MovieFavoriteDAO {
 
     @Query("SELECT * FROM movieFavorite")
-    suspend fun getAllMovie(): MutableList<MovieFavorite>
+    suspend fun getAllMovie(): MutableList<MovieFavorite>?
 
     @Query("SELECT * FROM movieFavorite WHERE idMovie = :id")
     suspend fun checkFavorite(id : Int): MovieFavorite?

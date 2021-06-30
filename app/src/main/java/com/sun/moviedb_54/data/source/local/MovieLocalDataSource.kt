@@ -6,7 +6,7 @@ import com.sun.moviedb_54.data.source.local.room.MovieFavoriteDAO
 
 class MovieLocalDataSource(private val movieFavoriteDAO: MovieFavoriteDAO) : MovieDataSource.Local {
 
-    override suspend fun getMovieFavorite(): MutableList<MovieFavorite> =
+    override suspend fun getMovieFavorite(): MutableList<MovieFavorite>? =
         movieFavoriteDAO.getAllMovie()
 
     override suspend fun checkFavorite(id: Int): MovieFavorite? =

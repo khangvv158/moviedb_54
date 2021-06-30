@@ -80,7 +80,9 @@ class DetailMovieViewModel(private val movieRepository: MovieRepository) : ViewM
                     }
                     launch {
                         movieRepository.getTrailer(idMovie = idMovie).body()?.also {
-                            keyYoutube = it.results[0].key
+                            if (it.results.size > 0){
+                                keyYoutube = it.results.first().key
+                            }
                         }
                     }
                 } catch (e: Exception) {

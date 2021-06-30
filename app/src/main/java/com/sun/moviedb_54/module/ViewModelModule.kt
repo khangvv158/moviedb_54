@@ -2,6 +2,7 @@ package com.sun.moviedb_54.module
 
 import com.sun.moviedb_54.screen.actordetail.ActorDetailViewModel
 import com.sun.moviedb_54.screen.detailmovie.DetailMovieViewModel
+import com.sun.moviedb_54.screen.favourite.FavouriteViewModel
 import com.sun.moviedb_54.screen.genres.GenresViewModel
 import com.sun.moviedb_54.screen.hot.viewmodel.HotMovieViewModel
 import com.sun.moviedb_54.screen.search.SearchViewModel
@@ -14,4 +15,5 @@ val viewModelModule = module {
     viewModel { HotMovieViewModel(get()) }
     viewModel { SearchViewModel(get()) }
     viewModel { ActorDetailViewModel(get()) }
+    viewModel { FavouriteViewModel(get()) }
 }

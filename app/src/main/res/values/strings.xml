@@ -19,4 +19,5 @@
     <string name="results">Results</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
+    <string name="movie_favorite">Movie Favorite </string>
 </resources>
